@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Ayush Hari!</title>
+  <style>
+    body {
+      font-family: 'Verdana', sans-serif;
+      text-align: center;
+      margin: 50px;
+      overflow: hidden;
+      background: linear-gradient(to right, #ff8c00, #ff0080);
+      animation: gradientChange 10s infinite alternate;
+      transition: background 1s ease-in-out;
+    }
+
+    #birthday-message {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    #photo-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .birthday-photo {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border: 2px solid #fff;
+      animation: floatAnimation 4s ease-in-out infinite alternate;
+    }
+
+    .birthday-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #birthday-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #birthday-button:hover {
+      background-color: #45a049;
+    }
+
+    @keyframes gradientChange {
+      0% {
+        background: linear-gradient(to right, #ff8c00, #ff0080);
+      }
+      100% {
+        background: linear-gradient(to right, #ff0080, #ff8c00);
+      }
+    }
+
+    @keyframes floatAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="birthday-message">
+    <p>Happy Birthday Ayush Hari!</p>
+    <p>Wishing you a fantastic day filled with joy and celebration.</p>
+  </div>
+
+  <div id="photo-container">
+    <!-- Add your photo URLs here -->
+    <div class="birthday-photo"><img src="./image/img1.jpeg" alt="Photo 1"></div>
+    <div class="birthday-photo"><img src="./image/img2.jpeg" alt="Photo 2"></div>
+    <div class="birthday-photo"><img src="./image/img3.jpeg" alt="Photo 3"></div>
+    <div class="birthday-photo"><img src="./image/img4.jpeg" alt="Photo 4"></div>
+  </div>
+
+  <button id="birthday-button" onclick="displayBirthdayWish()">Click Me!</button>
+
+  <script>
+    function displayBirthdayWish() {
+      alert("Happy Birthday Ayush Hari! 🎉🎂");
+    }
+  </script>
+</body>
+</html>
